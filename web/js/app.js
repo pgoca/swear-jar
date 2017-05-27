@@ -27,6 +27,7 @@
 
         $heroBtn.prop('disabled', true);
         video.play();
+        $heroMultiplier.val('');
 
     });
 
