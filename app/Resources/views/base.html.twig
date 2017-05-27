@@ -5,9 +5,18 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link href="https://fonts.googleapis.com/css?family=Anton|Oxygen+Mono|Tillana:400,600,800" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+    <video class="layout__background-video" muted>
+        <source src="{{ asset('video/money.mp4') }}" />
+    </video>
+    <h1 class="layout__header">Swear jar</h1>
+        {% block body %}
+        {% endblock %}
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="{{ asset('js/app.js') }}" />
         {% block javascripts %}{% endblock %}
     </body>
 </html>

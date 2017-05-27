@@ -1,0 +1,177 @@
+.caption-font {
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+}
+
+.default-font {
+    font-family: 'Tillana', cursive;
+    font-weight: 400;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Tillana', cursive;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.layout__background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.layout__header {
+    color: white;
+    text-shadow: #BF360C 0 0 10px, #BF360C 0 0 10px, #BF360C 0 0 10px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+}
+
+.top-list {
+    width: 300px;
+    background-color: #FFCCBC;
+    padding: 2px;
+}
+
+.top-list.top-list--daily {
+    float: right;
+}
+
+.top-list.top-list--all-time {
+    float: left;
+}
+
+.top-list .top-list__header {
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+}
+
+.top-list .top-list__list {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.top-list .top-list__list .top-list__entry {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+
+.top-list .top-list__list .top-list__entry:nth-child(1) {
+    background-color: #D84315;
+}
+.top-list .top-list__list .top-list__entry:nth-child(2) {
+    background-color: #E64A19;
+}
+.top-list .top-list__list .top-list__entry:nth-child(3) {
+    background-color: #F4511E;
+}
+.top-list .top-list__list .top-list__entry:nth-child(n+4) {
+    background-color: #FF5722;
+}
+.top-list .top-list__list .top-list__entry .top-list__entry__value {
+    float: right;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #E64A19;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FF5722;
+}
+
+.form-field {
+    background-color: #D84315;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+    font-family: 'Tillana', cursive;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.form-field::-webkit-input-placeholder {
+    color: #FFAB91;
+    font-family: 'Tillana', cursive;
+    font-weight: 600;
+}
+
+.hero-trigger {
+    position: fixed;
+    text-align: center;
+    bottom: 50px;
+    width: 100%;
+    font-size: 0;
+}
+
+.hero-trigger .hero-trigger__button, .hero-trigger .hero-trigger__multiplier {
+    line-height: 60px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0;
+}
+
+.hero-trigger .hero-trigger__button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px 50px;
+}
+
+.hero-trigger .hero-trigger__multiplier {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 120px;
+    text-align: center;
+}
+
+.hero-trigger .hero-trigger__multiplier::-webkit-input-placeholder {
+    font-size: 20px;
+}
+
+.poll {
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 100px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 150px;
+    text-align: center;
+    font-weight: 800;
+    color: #FF5722;
+    text-shadow: #000 0 0 50px, #FF7043 0 0 20px, #FF7043 0 0 20px, #FF7043 0 0 20px, #FF7043 0 0 20px;
+    white-space: nowrap;
+}
